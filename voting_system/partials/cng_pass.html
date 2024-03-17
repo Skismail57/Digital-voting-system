@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change passwprd</title>
+</head>
+<body>
+    <div class="box">
+        <form action="../actions/cng_pass.php" method="post">
+            <span class="details">User_name,phone no,email</span>
+            <input type="text" name="useridentity">
+            <span class="details">Security question</span>
+            <select name="sequrity-question" id="usertype" class="selections" required>
+              <option value="1">My nick name?</option>
+              <option value="2">My pet name?</option>
+              <option value="3">My best friend name?</option>
+              <option value="4">Mother name?</option>
+              <option value="5">Father name?</option>
+              <option value="6">My old school name?</option>
+              <option value="7">My bestie?</option>
+              <option value="8">other</option>
+            </select>
+            
+            <span class="details">Security Answer</span>
+            <input type="text" name="sequrity-answer" placeholder="puppy" required>
+          
+          <button type="submit">change</button>
+        </form>
+    </div>
+</body>
+</html>
