@@ -55,7 +55,7 @@ burgerMenu.addEventListener("click", function () {
 	
   <nav class="sidenav" id="sidenav">
 	<div class="navbrand">
-    <img src="../uploads/<?php echo $data['photo']?>" alt="user image">
+    <img src="../uploads/profiles/<?php echo $data['photo']?>" alt="user image">
 		
 		<h2 class="title title-medium"> <?php echo $data["fullname"] ;?></h2>
 	</div>
