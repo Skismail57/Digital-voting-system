@@ -1,0 +1,49 @@
+.upform {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.upform label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+
+}
+
+.upform input {
+
+    width: 100%;
+}
+
+.nominationform {
+    height: 100%;
+    width: 60%;
+    float: left;
+}
+
+.status {
+    height: 80vh;
+    width: 50%;
+    border-left: 2px dotted rgb(67, 66, 66);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    margin-top: 50px;
+    background: gray;
+    border-radius: 20px 20px;
+    width: 200px;
+}
+
+main img {
+    margin: 5px;
+    position: relative;
+    top: 20%;
+}

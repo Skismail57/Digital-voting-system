@@ -1,0 +1,65 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../styling/login.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <section>
+    <div class="login-container">
+      <h2>Login</h2>
+
+      <form action="../actions/login.php" method="POST">
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+
+          <input required type="text" name="useridentity" id="useridentity">
+          <label for="useridentity">email/user_name/phone no</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+
+          <input required type="password" name="password" id="password">
+          <label for="password">password</label>
+        </div>
+        <div class="input-box">
+          <input type="">
+          <select name="usertype" id="usertype" class="usertype">
+            <option value="voter">Voter</option>
+            <option value="nominee">Nominee</option>
+            <option value="admin">Admin</option>
+          </select>
+          <label for="usertype">Type of use</label>
+        </div>
+
+        <div class="remember-forgot">
+          <label>
+            <input name="tc" type="checkbox">
+            <a href="#">terms and conditions</a>
+          </label>
+
+          <a href="../partials/cng_pass.html">forget password</a>
+        </div>
+
+        <button type="submit">login</button>
+      </form>
+      <p>don't you have account?</p>
+      <div class="create-account">
+        <a href="../partials/registration.html">Register</a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
